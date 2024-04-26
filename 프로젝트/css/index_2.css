@@ -1,0 +1,361 @@
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #container{
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+    }
+    header{
+      width: 100%;
+      height: 100px ;
+    }
+    #logo{
+      float: left;
+      width: 250px;
+      height: 100%;
+      /* padding-top: 10px; */
+      /* background-color: aliceblue; */
+    }
+    nav{
+      float: right;
+      width: 900px;
+      height: 100px;
+      /* background-color: antiquewhite; */
+    }
+    #slidshow {   
+    clear:both;   /* 플로팅 해제 */
+    width:100%;    /* 너비 */ 
+    height:500px;   /* 높이 */ 
+    overflow:hidden;   /* 영역 넘치면 감춤 */ 
+    position: relative;
+  }
+  #sides {
+    position: absolute;
+  }
+  #slides > img {
+    width:100%;  /* 너비 */
+    float:left;  /*가로로 배치*/
+  }
+  button {
+    position: absolute;
+    height: 100%;
+    top:0;
+    border: none;
+    padding: 20px;
+    background-color: transparent;  /* 투명한 배경지정 */
+    color: #000;  /* 화살표를 검은색으로 */
+    font-weight: 800; /* 화살표 굵기지정 */
+    font-size: 24px;  /* 화살표 크기지정 */
+    opacity: 0.5;/* 화살표 반투명하게 지정 */
+  }
+  #prev {
+    left: 0;
+  }
+  #next {
+    right: 0;
+  }
+  button:hover {
+    background-color: #222; /*배경색*/
+    color: #fff;   /*흰색 화살표*/
+    opacity: 0.6;     /*불투명도를 높임*/
+    cursor: pointer;  /*포인터 모양으로 바꿈*/
+  }
+  button:focus{
+    outline: 0; /*아웃라인 없앰*/
+  }
+
+
+  
+    #contents{
+      width: 100%;
+      height: 350px;
+      /* background-color: aquamarine; */
+    }
+    #tapmenue{
+      float: left;
+      width: 50%;
+      height: 100%;
+      /* background-color: azure; */
+    }
+    #rowmenue{
+      float: right;
+      width: 50%;
+      height: 100%;
+      /* background-color: beige; */
+    }
+    footer{
+      width: 100%;
+      height: 100px;
+      /* background-color: bisque; */
+    }
+    ul li{
+      list-style: none;
+    } 
+    a{
+      text-decoration: none;
+    }
+    
+#menu{
+  height: 60px;
+  float: left;
+  width: 600px;
+  height: 100%;
+
+}
+#menu > li{
+  float: left;
+
+  position: relative;
+  line-height: 60px;
+}
+/* adssdas */
+#menu >li >ul{
+  display: none;
+  position: absolute;
+  width: 140px;
+  background-color: rgb(240, 211, 173);
+  left: 20px;
+  margin: 0;
+}
+#menu >li >ul> li{
+  padding: 10px 10px 10px 20px;
+
+}
+#menu >li >ul> li >a{
+  font-size: 16px;
+  /* padding: 10px; */
+  color: #000;
+}
+#menu > li:hover >ul{
+  display: block;
+  z-index: 10;
+}
+#menu > li >ul >li> a:hover{
+  color: #f00;
+}
+/*  */
+
+#menu > li > a:hover{
+  color: rgb(36, 84, 243);
+  text-shadow: 0 1px #07c;
+}
+#menu > li > a{
+  display: block;
+  color: black;
+  font-weight: 600;
+  text-shadow: 0 1px #07c;
+  padding: 20px 60px;
+}
+#topmenu > li > a > span{
+  font-size: 0.5em;
+  
+}
+
+#topmenu > li:hover >ul{
+  display: block;
+  z-index: 10;
+}
+
+
+
+#contents {
+width: 100%;
+height: 300px;
+}
+#tapmenue{
+float: left;
+width: 600px;
+height: 100%;
+background-color: rgb(155, 155, 155);
+}
+
+#links {
+float: left;
+width: 600px;
+height: 100%;
+margin-top: 20px;
+/* background-color: cadetblue; */
+}
+#links ul{
+  padding: 0;
+}
+#links ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin: 10px 0;
+}
+#links ul li a span{
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #add;
+  line-height: 150px;
+} 
+
+
+
+
+#tab_menu{
+  float: left;
+  width: 600px;
+  height: 100% ;
+  margin-top: 10px;
+}
+#tab_menu input[type= 'radio']{
+  display: none;
+}
+#tab_menu label{
+  display: inline-block;
+  margin: 0 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #aaa;
+  border: 1px solid transparent;
+}
+#tab_menu label:hover{
+  color: #222;
+  cursor: pointer;
+  
+}
+#tab_menu input:checked + label{ /*  */
+  color: #000;
+  border:  1px solid #ddd;
+  background-color: #eee;
+}
+#quick_iCon1{
+  background-image: url("/프로젝트/img/가맹점.png") ;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+#quick_iCon2{
+  background-image: url("/프로젝트/img/오시는길.jpg");
+  background-repeat: no-repeat;
+}
+#quick_iCon3{
+  background-image: url("/프로젝트/img/문의사항.jpg");
+  background-repeat: no-repeat;
+}
+#links ul li a p{
+  margin-top: 15px ;
+  font-weight: 600;
+  color: #666;
+}
+.Con{
+  display: none;
+  padding:  20px 0 0;
+  border-top:  1px solid #ddd;
+}
+.Con h2{
+  display: none;
+
+}
+#noteice ul{
+  list-style: disc;
+  margin-left: 30px;
+}
+#noteice ul li{
+  font-size: 16px;
+  line-height: 2.5;
+}
+#gallery ul li{
+  display: inline;
+
+}
+#gallery ul li img{
+  width: 150px;
+  height: 99px;
+}
+
+#tap1:checked~#noteice,
+#tap2:checked~#gallery{
+  display: block;
+}
+
+#bottonmemu{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+#bottonmemu ul{
+  margin-top: 15px;
+}
+#bottonmemu ul li{
+  float: left;
+  padding: 5px 20px;
+  border-right: 1px solid #ddd; /* 제목의 오른쪽에 선긋기 */
+  
+}
+#bottonmemu ul li:last-child{
+  border-right: none;
+}
+#bottonmemu ul li a,#bottonmemu ul li a:visited {
+  font-size: 15px;
+  counter-reset: #666;
+}
+#company{
+  clear: both;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+  #container {
+    width: 100%;
+    padding: 0 10px; 
+  }
+  #logo{
+    width: 100%;
+    text-align: center;
+  }
+  nav{
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  #slideshow{
+    width: 100%;
+    height: auto;
+  } 
+  /* #slideshow > img{
+    object-fit: scale-down;
+  } */
+  button{
+    height: 100%;
+  }
+  #contents{
+    height: auto;
+  }
+  #tab_menu{
+    float: left;
+    width: 100%;
+  }
+  #noteice,#gallery{
+    width: 100%;
+    text-align: center;
+  }
+  #bottonmemu{
+    width: 100%;
+    float: none;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  #links{
+    width: 100%;
+    text-align: center;
+    /* margin-top: 10px; */
+  }
+
+}
+
